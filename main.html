@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fusion: Dream Start</title>
+    <link rel="icon" type="image/x-icon" href="thumbnails/cloudcode.png" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body id="body">
+    <div class="header-and-content" id="big-box">
+      <div class="header">
+        <div class="logo-container">
+          <div class="logo"></div>
+          <a href="../index.html">
+            <div class="logo-name">Fusion</div>
+          </a>
+        </div>
+        <div class="right-header">
+          <!--- <div class="button">Contact Us</div> -->
+          <div
+            class="hamburger"
+            id="hamburger"
+            onclick="handleMenuClick()"
+          ></div>
+        </div>
+      </div>
+      <div class="lottie-box">
+        <div class="section-row">
+          <div class="centered-div dw">
+            <div class="welcome-title-desc">Good Morning! Charles</div>
+
+            <div id="current-date" class="welcome-title fonts-title">00:00</div>
+
+            <div id="current-full-date" class="orange-text">
+              SUNDAY, APRIL, 23, 2023
+            </div>
+            <br />
+            <div id="quote" class="welcome-desc"></div>
+            <a href="pages/subject.html">
+              <div class="join-button">
+                <div class="button-icon"></div>
+                <div class="button-text">
+                  <div class="button-item-1">GET STARTED</div>
+                  <a href="https://google.com" target="_blank">
+                    <div class="button-item-2">Take me to Google</div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <div class="after-button-text">
+              <br />Learn the best tools and platforms.Make your code efficient
+              and learn new methodologies in programming.
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="logo-text">PRIVACY</div>
+          <div class="logo-text">CONTACT US</div>
+          <div class="logo-text">BUY U$ COFFEE</div>
+        </div>
+        <lottie-player
+          class="rain d-off"
+          src="https://assets2.lottiefiles.com/packages/lf20_nqozkoiy.json"
+          background="transparent"
+          speed="0.5"
+          loop
+          autoplay
+          id="rain"
+        ></lottie-player>
+
+        <lottie-player
+          class="birds d-off"
+          src="https://assets7.lottiefiles.com/packages/lf20_Kqzytj.json"
+          background="transparent"
+          speed="0.5"
+          loop
+          autoplay
+          id="birds"
+        ></lottie-player>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="popup.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>

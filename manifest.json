@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Fusion: Dream Start",
+  "version": "1.0",
+  "description": "A Chrome extension that opens a new tab with the current date and a custom background.",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "thumbnails/cloudcode.png",
+      "48": "thumbnails/cloudcode.png",
+      "128": "thumbnails/cloudcode.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["tapped.js", "popup.js"]
+    }
+  ]
+}

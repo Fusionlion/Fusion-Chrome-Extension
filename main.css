@@ -1,0 +1,148 @@
+.button {
+  background-color: #f7f6f6;
+  padding: 10px 20px;
+  border-radius: 19px;
+}
+
+.lottie-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.welcome-container {
+  flex: 1;
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 3px;
+  z-index: 100;
+}
+.after-button-text {
+  color: rgba(238, 230, 230, 0.7);
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  margin: 0px;
+  max-width: 380px;
+}
+.birds {
+  top: 0px;
+  right: 0px;
+
+  position: absolute;
+  z-index: 1;
+}
+.rain {
+  position: absolute;
+  filter: contrast(200%);
+  z-index: 1;
+}
+
+.orange-text {
+  font-size: 1.2rem;
+  color: white;
+  background-color: orangered;
+  padding: 1px 10px;
+  border-radius: 7px;
+  margin-bottom: -12px;
+}
+.welcome-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.welcome-desc {
+  width: 55%;
+  text-align: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.join-button {
+  backdrop-filter: blur(30px);
+  padding: 10px 40px 10px 15px;
+  margin-top: 15px;
+  border-radius: 60px;
+  color: rgb(255, 254, 254);
+  border: #f7f6f64d 2px solid;
+  transition: padding 0.7s, color 0.7s;
+  z-index: 10;
+  gap: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.join-button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: rgb(27, 58, 60);
+}
+.button-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/73/73940.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 29px;
+  width: 29px;
+  filter: invert(3);
+}
+.button-item-1 {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 254, 254);
+}
+.button-item-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  margin: 0px;
+  color: rgb(89, 92, 123);
+}
+.button-icon:hover {
+  transform: rotate(-0.25turn);
+}
+
+.footer {
+  flex: 0.1;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  color: rgb(125, 120, 120);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  text-align: center;
+  gap: 40px;
+}
+.dark-button {
+  background-image: url(../thumbnails/sun.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(0);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 200;
+}
+.dark-button:hover {
+  filter: contrast(1);
+  cursor: pointer;
+}
