@@ -17,6 +17,23 @@
   <li>🖌️ <strong>Customization:</strong> Personalize your new tab page with your favorite background images.</li>
 </ul>
 
+## Permissions
+
+This extension requires the following permissions:
+
+- **"tabs":**
+  - Allows access to information about browser tabs.
+  - Enables querying and manipulation of tab states, including opening, closing, and updating tabs.
+
+- **"activeTab":**
+  - Grants temporary access to the currently active tab when the user invokes the extension.
+  - Used for interacting with the content of the current tab.
+
+- **"storage":**
+  - Enables the use of the Chrome Storage API.
+  - Provides a key-value storage mechanism for storing and retrieving data locally, such as user preferences.
+
+
 <h2 align="center">How to Use:</h2>
 
 <ol>
