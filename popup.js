@@ -1,12 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
   loadpagedata();
 });
+function enableEdit() {
+  var element = document.getElementById("editableText");
+  element.contentEditable = true;
+  element.focus();
+}
 
+// Function to save edited text to local storage
+function saveToLocalStorage() {
+  var editedText = document.getElementById("editableText").innerText;
+  localStorage.setItem("editedText", editedText);
+}
+
+// Check if there is previously edited text in local storage
+var storedText = localStorage.getItem("editedText");
+if (storedText) {
+  document.getElementById("editableText").innerText = storedText;
+}
+
+// Add event listener to save edited text on blur
+document.getElementById("editableText").addEventListener("blur", function () {
+  saveToLocalStorage();
+});
 function loadpagedata() {
   getQuote();
   // Array of image URLs
-  const backgroundImages = ["digideer.jpeg", "fox.jpg"];
-
+  const backgroundImages = [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+  ];
   // Function to set a random background image
 
   // Get a random index from the array
@@ -47,19 +79,19 @@ function getQuote() {
   const randomQuote = quotes[randomIndex];
   document.getElementById("quote").innerHTML = randomQuote;
 }
-
 function constanttime() {
-  // Get the current date
+  // Get the current date and time
   var today = new Date();
+  console.log(today);
   var hours = today.getHours() % 12 || 12;
-  //const currentDate = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-
-  currentDate = hours + ":" + today.getMinutes();
-
-  // Display the date
-  document.getElementById("current-date").innerHTML = currentDate;
-
-  // Create a new Date object for April 23, 2023
+  var minutes = today.getMinutes();
+  // Determine if it's AM or PM
+  var ampm = today.getHours() >= 12 ? "PM" : "AM";
+  // Display the time
+  var currentTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+  document.getElementById("current-time").innerHTML = currentTime;
+  document.getElementById("ampm").innerHTML = ampm;
+  // Create a new Date object for the current date
   const date = new Date();
 
   // Define arrays for day names and month names
@@ -99,4 +131,10 @@ function constanttime() {
   const formattedDate = `${day}, ${month} / ${dayOfMonth} / ${year}`;
 
   document.getElementById("current-full-date").innerHTML = formattedDate;
+
+  // Update the time every minute
+  setTimeout(constanttime, 60000);
 }
+
+// Call the function to initialize
+constanttime();
