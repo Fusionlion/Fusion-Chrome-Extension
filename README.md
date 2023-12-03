@@ -1,7 +1,8 @@
 <h1 align="center">Fusion: Dream Start Chrome Extension</h1>
 <p align="center">
-  <img src="https://github.com/Fusionlion/Fusion-Chrome-Extension/assets/74889517/e6559e31-df99-4365-a0d5-9a530202e454" alt="Extension Icon" />
+ <img width="1460" alt="Screen Shot 2023-12-02 at 11 25 22 PM" src="https://github.com/zabloncharles/Fusion-Chrome-Extension/assets/74889517/f8f21ee2-1035-4eb9-8f4d-dd628ab89d0a">
 </p>
+
 
 <p align="center"><strong>🌟 A Beautiful New Tab Experience 🌟</strong></p>
 
